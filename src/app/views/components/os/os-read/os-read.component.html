@@ -33,7 +33,7 @@
         <!-- Prioridade Column -->
         <ng-container matColumnDef="prioridade">
             <th mat-header-cell *matHeaderCellDef> Prioridade </th>
-            <td mat-cell *matCellDef="let element"> {{element.prioridade}} </td>
+            <td mat-cell *matCellDef="let element" class="{{ element.prioridade.toLowerCase() }}"> {{element.prioridade}} </td>
           </ng-container>
           
         <!-- Status Column -->
