@@ -18,7 +18,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatMenu, MatMenuModule } from '@angular/material/menu';
 
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
@@ -35,6 +36,7 @@ import { ClienteDeleteComponent } from './views/components/cliente/cliente-delet
 import { OsReadComponent } from './views/components/os/os-read/os-read.component';
 import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
 import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
+import { OsViewComponent } from './views/components/os/os-view/os-view.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { OsUpdateComponent } from './views/components/os/os-update/os-update.com
     ClienteDeleteComponent,
     OsReadComponent,
     OsCreateComponent,
-    OsUpdateComponent
+    OsUpdateComponent,
+    OsViewComponent
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { OsUpdateComponent } from './views/components/os/os-update/os-update.com
     MatInputModule,
     MatDatepickerModule,
     MatPaginatorModule,
-    MatSnackBarModule    
+    MatSnackBarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

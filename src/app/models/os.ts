@@ -1,6 +1,6 @@
 export interface OS {
     id?: any;
-    dataAbetura?: any;
+    dataAbertura?: any;
     dataFechamento?: any;
     prioridade: any;
     observacoes: String;
